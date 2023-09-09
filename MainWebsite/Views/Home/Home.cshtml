@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewData["Title"] = "Home";
+    
+}
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/MainWebsite.styles.css" asp-append-version="true" />
+<div class="title-container">
+    <h1 class="ptitle" >
+        Welcome, Our Services
+    </h1>
+</div>
+
+
+
+<div class="container">
+    
+    <div class="row">
+        <div class="col-md-4">
+            <div class="box" style="background-image: url('../images/logo.jpg')">
+                <a asp-action="" > <h3 class="box-title">logo Design</h3></a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="box" style="background-image: url('../images/web.jpg')">
+                <h3 class="box-title">Web Design</h3>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="box" style="background-image: url('../images/social.jpg')">
+                <h3 class="box-title">Social media Design</h3>
+            </div>
+        </div>
+    </div>
+</div>
+

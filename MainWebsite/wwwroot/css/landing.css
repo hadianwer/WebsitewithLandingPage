@@ -1,0 +1,228 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+header {
+    position: relative;
+    z-index: 1;
+}
+
+/* Set background image and styles */
+.background {
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden; /* Prevent background overflow */
+    position: relative;
+}
+
+
+/* Centered content */
+.centered-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2
+}
+
+
+nav {
+    position: relative; /* Add this */
+    z-index: 2; /* Add this */
+}
+/* Navigation menu styles */
+.top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+    .top-nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .top-nav li {
+        margin: 0 20px;
+        position: relative;
+    }
+
+    .top-nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        position: relative;
+        overflow: hidden;
+        transition: color 0.5s ease-in-out;
+        font-family: Calibri;
+        text-shadow: 0 0 1.5rem white, 0 0 3.5rem white, 0 0 5rem white, 0 0 7rem #ff00de, 0 0 8rem #ff00de, 0 0 10rem #ff00de, 0 0 12rem #ff00de, 0 0 15rem #ff00de;
+        animation:none;
+    }
+        .top-nav a::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: 100%;
+            
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            z-index: -1;
+        }
+
+        .top-nav a:hover {
+            color: #258cfb;
+            text-shadow: 0 0 1.5rem #258cfb, 0 0 3.5rem #258cfb, 0 0 5rem #258cfb, 0 0 7rem #ff00de, 0 0 8rem #ff00de, 0 0 10rem #ff00de, 0 0 12rem #ff00de, 0 0 15rem #ff00de;
+            animation: blink 0.5s infinite alternate;
+            /* Change to your desired neon color */
+        }
+
+            .top-nav a:hover::before {
+                opacity: 0.7; /* Adjust opacity to control the intensity of the neon effect */
+            }
+
+@keyframes blink {
+    0% {
+        color: white;
+    }
+
+    100% {
+        color: #258cfb;
+    }
+}
+/* Centered content styles */
+.centered-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+}
+
+/* Footer styles */
+.footer {
+    
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Footer styles */
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    width: 300px;
+    
+}
+.socialhover{
+    display: inline-block;
+    padding: 7px; /* Adjust the padding as needed */
+    transition: transform 0.2s ease-in-out;
+   
+}
+
+    .socialhover:hover {
+        transform: scale(1.1);
+       
+    }
+
+
+ 
+
+
+.socicolor svg path {
+    fill: white;
+}
+.socicolor svg path:hover {
+    fill: blue;
+}
+
+.email-input {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.subscribe-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width:170px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:13px;
+    
+   
+}
+    
+
+    .subscribe-button:hover {
+        background-color: #0056b3;
+    }
+    .heading{
+        color:white;
+    }
+
+
+.title-container {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 100%;
+}
